@@ -1,10 +1,9 @@
 ﻿using Supermercado.Models;
 using Supermercado.Services;
-using System.Web.Http;
-using System;
 using System.Collections.Generic;
-using System.Net.Http;
 using System.Net;
+using System.Net.Http;
+using System.Web.Http;
 
 namespace Supermercado.Controllers
 {

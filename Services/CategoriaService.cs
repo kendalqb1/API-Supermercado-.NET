@@ -2,22 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Data;
 
 namespace Supermercado.Services
 {
     public class CategoriaService
     {
         static string cadenaDB = "Data Source=.;Initial Catalog=Supermercado;Integrated Security=True";
-
-        public static void debugPrint(string cadena)
-        {
-            System.Diagnostics.Debug.WriteLine(cadena);
-        }
-        static CategoriaService()
-        {
-        }
-
         public static List<Categoria> GetAll()
         {
             List<Categoria> categorias = new List<Categoria>();
@@ -66,7 +56,6 @@ namespace Supermercado.Services
                 }
             }
         }
-
         public static bool Add(Categoria cat)
         {
             string queryDB = "INSERT INTO categorias (nombreCategoria) VALUES (@nombreCat);";
